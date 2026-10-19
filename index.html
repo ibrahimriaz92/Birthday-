@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100e20">
+    <title>Happy Birthday, My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <!-- INTRO SCREEN -->
+    <main class="hero" id="introScreen">
+        <div class="badge">✦ A SPECIAL DAY ✦</div>
+        <p class="eyebrow">MADE WITH LOVE, JUST FOR YOU</p>
+
+        <h1>
+            Happy Birthday,<br>
+            <span id="personName">My Favorite Person</span>
+            <span class="heart">♥</span>
+        </h1>
+
+        <p class="intro">
+            Today is all about you. You deserve all the happiness,
+            love, and beautiful moments this world has to offer.
+        </p>
+
+        <div class="gift-area">
+            <div class="glow"></div>
+
+            <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open birthday gift">
+                <div class="gift-lid"></div>
+                <div class="gift-box">
+                    <div class="ribbon"></div>
+                    <div class="bow">🎀</div>
+                    <div class="gift-heart">♥</div>
+                </div>
+            </div>
+
+            <p class="click-hint">✧ Tap your gift to open it ✧</p>
+        </div>
+    </main>
+
+    <!-- BIRTHDAY MESSAGE -->
+    <section class="letter screen" id="letter" hidden>
+        <div class="letter-icon">💌</div>
+        <p class="eyebrow">A MESSAGE FROM MY HEART</p>
+        <h2>To Someone Truly Special</h2>
+
+        <p id="message"></p>
+
+        <!-- <div class="poetry">
+            <p>Bahut din ho gayi hain tumse bichde...</p>
+            <p>Bahut din ho gayi hain tumse bichde...</p>
+            <p class="poetry-last">
+                Tumhe milne ko ab mann kar raha hai ❤️
+            </p>
+        </div> -->
+
+        <!-- <div class="signature">
+            With love, always <span>♥</span>
+        </div> -->
+
+        <button class="button" id="photosBtn">
+            Our Memories 📸
+        </button>
+
+        <button class="secondary-button" id="surpriseBtn">
+            One More Surprise ✨
+        </button>
+    </section>
+
+    <!-- THREE NEW GIFT CARDS -->
+    <section class="letter screen" id="cardsSection" hidden>
+        <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+        <h2>You're <span>Special</span> ❤️</h2>
+        <p class="intro">Three little cards, one big wish.</p>
+
+        <section class="cards-container">
+
+            <article class="gift-card card-one" data-title="Beautiful Memories"
+                data-message="Every memory with you is a little treasure. Keep smiling and making beautiful memories! ❤️"
+                tabindex="0" role="button">
+                <div class="card-icon">♡</div>
+                <h2>Beautiful<br>Memories</h2>
+                <p>Every moment has its own magic.</p>
+                <span class="card-number">01 — MEMORIES</span>
+            </article>
+
+            <article class="gift-card card-two" data-title="Special Wishes"
+                data-message="May your birthday bring you endless happiness, new adventures, and everything your heart wishes for. 🎂"
+                tabindex="0" role="button">
+                <div class="card-icon">✧</div>
+                <h2>Special<br>Wishes</h2>
+                <p>A little wish for your big day.</p>
+                <span class="card-number">02 — WISHES</span>
+            </article>
+
+            <article class="gift-card card-three" data-title="Endless Happiness"
+                data-message="You deserve kindness, happiness, and beautiful days ahead. Never forget how special you are! 💖"
+                tabindex="0" role="button">
+                <div class="card-icon">♡</div>
+                <h2>Endless<br>Happiness</h2>
+                <p>May your days be full of joy.</p>
+                <span class="card-number">03 — HAPPINESS</span>
+            </article>
+
+        </section>
+
+        <p class="hint">✦ Click any card to reveal your surprise ✦</p>
+
+        <section class="message-box" id="messageBox" aria-live="polite" hidden>
+            <div class="message-heart">♥</div>
+            <h2 id="messageTitle">A Message for You</h2>
+            <p id="messageText"></p>
+            <button id="closeButton" type="button">Close ✕</button>
+        </section>
+
+        <button class="button" id="cardsPhotosBtn">
+            Our Photos 📸
+        </button>
+
+        <button class="secondary-button" id="cardsBackBtn">
+            Back to Message 💌
+        </button>
+    </section>
+
+    <!-- PHOTO SECTION -->
+    <section class="letter screen" id="photosSection" hidden>
+        <div class="letter-icon">📸</div>
+        <p class="eyebrow">EVERY MOMENT MATTERS</p>
+        <h2>Our Beautiful Memory</h2>
+
+        <p class="intro">Every picture holds a special memory. ❤️</p>
+
+        <div class="photo-grid">
+            <!-- <figure class="photo-card">
+                <img src="photos/photo1.jpg" alt="Special memory">
+                <figcaption>A beautiful memory ❤️</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+                <img src="photos/photo2.jpg" alt="Happy moments">
+                <figcaption>Moments to remember ✨</figcaption>
+            </figure>
+
+            <figure class="photo-card">
+                <img src="photos/photo3.jpg" alt="Favorite memory">
+                <figcaption>Forever special 💖</figcaption>
+            </figure> -->
+            <figure class="photo-card">
+                <img src="photo4.png" alt="Most favorite moment">
+                <figcaption>Most Favorite moment💖</figcaption>
+            </figure>
+        </div>
+
+        <button class="button" id="backBtn">
+            Back to Message 💌
+        </button>
+
+        <button class="secondary-button" id="photoSurpriseBtn">
+            Final Surprise 🎉
+        </button>
+    </section>
+
+    <!-- FINAL SURPRISE -->
+    <section class="letter screen" id="surpriseSection" hidden>
+        <div class="letter-icon">🎂</div>
+        <p class="eyebrow">YOUR SPECIAL MOMENT</p>
+        <h2>Make a Birthday Wish!</h2>
+        <div class="cake">🎂</div>
+
+        <p class="intro">
+            May your dreams come true, your smile never fade,
+            and your life always be filled with happiness. ❤️
+        </p>
+
+        <button class="button" id="celebrateBtn">
+            Celebrate! 🎊
+        </button>
+
+        <button class="secondary-button" id="restartBtn">
+            Start Again ↻
+        </button>
+    </section>
+
+    <!-- CELEBRATION EFFECTS -->
+    <div id="celebration" aria-hidden="true"></div>
+
+    <footer>A little website, a lot of love. ♡</footer>
+
+
+    <audio id="bgMusic" loop>
+        <source src="Tere pass main.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-button" type="button">
+        🎵 Play Music
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
